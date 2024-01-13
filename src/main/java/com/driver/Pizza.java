@@ -9,6 +9,8 @@ public class Pizza {
     boolean isChees;
     boolean isToppings;
 
+    boolean isBill;
+
 
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
@@ -80,9 +82,19 @@ public class Pizza {
 
     }
 
-    public String getBill(){
+    public String getBill()
+    {
         // your code goes here
-        this.bill+="Total Price: "+this.price+"\n";
+
+
+            if(isBill==false)
+            {
+
+                this.bill+="Total Price: "+this.price+"\n";
+                isBill=true;
+
+            }
+
         return this.bill;
     }
 }
