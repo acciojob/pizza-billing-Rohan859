@@ -50,7 +50,7 @@ public class Pizza {
     {
 
         // your code goes here
-        if(isToppings==false)
+        if((isToppings==false && this.isChees==true) || (this.isToppings==false && this.isChees==false))
         {
             if(this.isVeg)
             {
